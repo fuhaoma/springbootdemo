@@ -1,0 +1,6 @@
+rootProject.name = 'demo'
+
+include 'application-user'
+include 'service-user'
+include 'service-core'
+

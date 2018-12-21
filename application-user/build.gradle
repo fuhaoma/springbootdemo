@@ -1,0 +1,7 @@
+dependencies {
+    testImplementation('org.springframework.boot:spring-boot-starter-test')
+    compile project(":service-user")
+    //spring-mvc
+    compile('org.springframework.boot:spring-boot-starter-web')
+    compile("org.flowable:flowable-spring-boot-autoconfigure:6.4.0")
+}
