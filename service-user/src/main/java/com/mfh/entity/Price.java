@@ -21,4 +21,5 @@ public class Price implements Serializable {
     private String name;
     private Long price;
     private Date createdAt;
+    private Date updatedAt;
 }
