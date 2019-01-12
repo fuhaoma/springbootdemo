@@ -8,6 +8,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.io.Serializable;
+import java.util.Date;
 
 @Entity
 @Data
@@ -19,4 +20,5 @@ public class Price implements Serializable {
     private Integer id;
     private String name;
     private Long price;
+    private Date createdAt;
 }
