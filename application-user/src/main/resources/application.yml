@@ -6,7 +6,6 @@ spring:
     active: dev
 server:
   port: 8088
-  httpPort: 9443
 vo:
   name: aa
   age: 20
@@ -15,6 +14,8 @@ vo:
 spring:
   jpa:
     show-sql: true
+    hibernate:
+      ddl-auto: update #自动更新和创建表
   profiles: dev
   datasource:
     url: jdbc:mysql://118.25.7.77:3306/demo?useSSL=false&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai
