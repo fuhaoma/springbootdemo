@@ -18,4 +18,5 @@ public class Price implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
+    private Long price;
 }
