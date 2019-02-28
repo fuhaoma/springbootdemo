@@ -8,8 +8,8 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
 @ComponentScan(basePackages = {"com.mfh.*"})
-@EnableJpaRepositories(basePackages = {"com.mfh.dao"})
-@EntityScan(basePackages = {"com.mfh.entity"})
+@EnableJpaRepositories(basePackages = {"com.mfh.user.dao"})
+@EntityScan(basePackages = {"com.mfh.user.entity"})
 public class UserApplication {
     public static void main(String[] args) {
         SpringApplication.run(UserApplication.class, args);

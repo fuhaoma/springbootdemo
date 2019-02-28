@@ -1,6 +1,9 @@
 rootProject.name = 'demo'
 
 include 'application-user'
+include 'application-rabbit'
 include 'service-user'
 include 'service-core'
+include 'service-activiti'
+include 'service-rabbit'
 

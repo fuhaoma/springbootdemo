@@ -1,9 +1,9 @@
 package com.mfh.user.controller;
 
-import com.mfh.core.base.BaseController;
-import com.mfh.entity.User;
-import com.mfh.service.UserService;
+import com.mfh.core.BaseController;
+import com.mfh.rabbit.entity.User;
 import com.mfh.user.vo.UserEntity;
+import com.mfh.rabbit.service.UserService;
 import com.mfh.user.vo.UserVO;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

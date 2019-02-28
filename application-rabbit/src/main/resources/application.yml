@@ -1,31 +1,33 @@
 spring:
   application:
-    name: userapp
+    name: rabbitapp
   profiles:
     #选择使用的配置文件
     active: dev
 server:
-  port: 8088
-vo:
-  name: aa
-  age: 20
-  gender: 1
+  port: 8080
+logbook:
+  format:
+    style: http
 ---
 spring:
-  jpa:
-    show-sql: true
   profiles: dev
   datasource:
     url: jdbc:mysql://118.25.7.77:3306/demo?useSSL=false&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai
     username: root
     password: 123456
     driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
   rabbitmq:
     host: 118.25.7.77
     username: admin
     password: 123456
     port: 5672
-    #virtual-host: /
+    virtual-host: /
     listener:
       simple:
         concurrency: 10
