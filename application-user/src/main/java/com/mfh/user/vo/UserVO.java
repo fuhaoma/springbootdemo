@@ -1,6 +1,6 @@
 package com.mfh.user.vo;
 
-import com.mfh.rabbit.entity.User;
+import com.mfh.user.entity.User;
 import lombok.Data;
 import lombok.experimental.Accessors;
 import org.springframework.beans.BeanUtils;
